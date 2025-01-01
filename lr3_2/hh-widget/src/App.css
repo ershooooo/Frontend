@@ -1,0 +1,78 @@
+.app-container {
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  outline: none;
+  width: 300px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+button:disabled {
+  background-color: #999;
+  border-color: #999;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+
+.job-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .job-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .job-item a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+  .job-employer {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .job-salary {
+      color: #228B22;
+      font-weight: 600;
+    }
