@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор вкладов</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/image1.jpg" alt="Image 1"></div>
+          <div class="swiper-slide"><img src="images/image2.png" alt="Image 2"></div>
+          <div class="swiper-slide"><img src="images/image3.jpg" alt="Image 3"></div>
+          <div class="swiper-slide"><img src="images/image4.jpg" alt="Image 4"></div>
+          <div class="swiper-slide"><img src="images/image5.jpg" alt="Image 5"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    <div class="calculator-container">
+        <h2>Калькулятор вкладов</h2>
+        <form id="deposit-form">
+            <label for="deposit-type">Вид вклада:</label>
+            <select id="deposit-type" required>
+                <option value="">Выберите вид вклада</option>
+                <option value="replenishable">Пополняемый</option>
+                <option value="term">Срочный</option>
+            </select><br><br>
+
+            <label for="deposit-term">Срок вклада:</label>
+            <select id="deposit-term" required>
+                <option value="">Выберите срок вклада</option>
+            </select><br><br>
+
+            <label for="deposit-amount">Сумма вклада:</label>
+            <input type="number" id="deposit-amount" required min="1"><br><br>
+
+            <button type="submit">Рассчитать</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
